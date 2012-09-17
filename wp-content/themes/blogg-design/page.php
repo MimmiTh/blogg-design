@@ -1,0 +1,51 @@
+<?php get_header(); ?>
+			
+		<div id="content" class="clearfix">
+			
+				<div id="main" class="left clearfix" role="main">
+
+					<?php if (have_posts()) : while (have_posts()) : the_post(); ?>
+					
+					<article id="post-<?php the_ID(); ?>" <?php post_class('clearfix'); ?> role="article" itemscope itemtype="http://schema.org/BlogPosting">
+						
+						<header>
+							
+							<h1 class="page-title" itemprop="headline"><?php the_title(); ?></h1>
+						
+						</header> <!-- end article header -->
+					
+						<section class="post_content clearfix" itemprop="articleBody">
+							<?php the_content(); ?>
+					
+						</section> <!-- end article section -->
+						
+						<footer>
+			
+							<?php the_tags('<p class="tags"><span class="tags-title">Tags:</span> ', ', ', '</p>'); ?>
+							
+						</footer> <!-- end article footer -->
+					
+					</article> <!-- end article -->
+					
+					<?php endwhile; ?>		
+					
+					<?php else : ?>
+					
+					<article id="post-not-found">
+					    <header>
+					    	<h1>Hittades inte</h1>
+					    </header>
+					    <section class="post_content">
+					    	<p>Det du letade efter finns inte här!</p>
+					    </section>
+					    <footer>
+					    </footer>
+					</article>
+					
+					<?php endif; ?>
+							
+				</div> <!-- end #main -->
+    
+				<?php get_sidebar(); ?>
+			    
+			    <?php get_footer(); ?>

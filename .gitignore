@@ -1,8 +1,13 @@
 .htaccess
+/index.php
 wp-*.php
 xmlrpc.php
 wp-admin/
 wp-includes/
+wp-content/plugins/
+wp-content/themes/index.php
+wp-content/themes/twenty*
+wp-content/index.php
 wp-content/uploads/
 wp-content/blogs.dir/
 wp-content/upgrade/*
@@ -11,6 +16,9 @@ wp-content/advanced-cache.php
 wp-content/wp-cache-config.php
 wp-content/cache/*
 wp-content/cache/supercache/*
+wp-content/languages/admin*
+wp-content/languages/continents*
+wp-content/languages/sv*
 sitemap.xml
 sitemap.xml.gz
 readme.html

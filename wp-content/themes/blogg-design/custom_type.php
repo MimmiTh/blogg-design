@@ -14,7 +14,7 @@ Template Name: Free Designs
 			while ( $loop->have_posts() ) : $loop->the_post(); ?>
 				<article class="design">
 					<figure>
-						<a rel="lightbox[designs]" href="<?php print get_post_meta($post->ID , 'full_img', true); ?>"><?php the_post_thumbnail( 'thumb-220' );?></a>
+						<a href="<?php print get_post_meta($post->ID , 'post_url', true); ?>"><?php the_post_thumbnail( 'thumb-220' );?></a>
 						<figcaption>
 							<h2 class="h4"><?php the_title();?></h2>
 							<?php the_excerpt(); ?>

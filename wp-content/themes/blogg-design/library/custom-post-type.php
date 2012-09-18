@@ -21,20 +21,20 @@ function custom_post_example() {
 	register_post_type( 'custom_type', /* (http://codex.wordpress.org/Function_Reference/register_post_type) */
 	 	// let's now add all the options for this post type
 		array('labels' => array(
-			'name' => __('Custom Types', 'post type general name'), /* This is the Title of the Group */
-			'singular_name' => __('Custom Post', 'post type singular name'), /* This is the individual type */
-			'add_new' => __('Add New', 'custom post type item'), /* The add new menu item */
-			'add_new_item' => __('Add New Custom Type'), /* Add New Display Title */
-			'edit' => __( 'Edit' ), /* Edit Dialog */
-			'edit_item' => __('Edit Post Types'), /* Edit Display Title */
-			'new_item' => __('New Post Type'), /* New Display Title */
-			'view_item' => __('View Post Type'), /* View Display Title */
-			'search_items' => __('Search Post Type'), /* Search Custom Type Title */ 
-			'not_found' =>  __('Nothing found in the Database.'), /* This displays if there are no entries yet */ 
-			'not_found_in_trash' => __('Nothing found in Trash'), /* This displays if there is nothing in the trash */
+			'name' => __('Bloggdesigner', 'bloggdesigner'), /* This is the Title of the Group */
+			'singular_name' => __('Bloggdesign', 'bloggdesign'), /* This is the individual type */
+			'add_new' => __('Lägg till ny', 'custom post type item'), /* The add new menu item */
+			'add_new_item' => __('Lägg till ny bloggdesign'), /* Add New Display Title */
+			'edit' => __( 'Redigera' ), /* Edit Dialog */
+			'edit_item' => __('Redigera bloggdesign'), /* Edit Display Title */
+			'new_item' => __('Ny bloggdesign'), /* New Display Title */
+			'view_item' => __('Visa bloggdesign'), /* View Display Title */
+			'search_items' => __('Sök bloggdesign'), /* Search Custom Type Title */ 
+			'not_found' =>  __('Inget hittades i databasen'), /* This displays if there are no entries yet */ 
+			'not_found_in_trash' => __('Inget hittades i papperskorgen'), /* This displays if there is nothing in the trash */
 			'parent_item_colon' => ''
 			), /* end of arrays */
-			'description' => __( 'This is the example custom post type' ), /* Custom Type Description */
+			'description' => __( 'Gratis bloggdesigner till Gratis bloggdesigner-sidan.' ), /* Custom Type Description */
 			'public' => true,
 			'publicly_queryable' => true,
 			'exclude_from_search' => false,

@@ -2,10 +2,10 @@
 			
 			<div id="content" class="clearfix">
 			
-				<div id="main" class="col620 left first clearfix" role="main">
+				<div id="main" class="left clearfix" role="main">
 				
 					<h1 class="archive_title h2">
-						<span><?php _e("Posts By:", "bonestheme"); ?></span> 
+						<span><?php _e("Artiklar skrivna av:"); ?></span> 
 						<!-- google+ rel=me function -->
 						<?php $curauth = (get_query_var('author_name')) ? get_user_by('slug', get_query_var('author_name')) : get_userdata(get_query_var('author'));
 						$google_profile = get_the_author_meta( 'google_profile', $curauth->ID );
@@ -16,33 +16,31 @@
 						<?php } ?>
 					</h1>
 					
-					<?php if (have_posts()) : while (have_posts()) : the_post(); ?>
-					
-					<article id="post-<?php the_ID(); ?>" <?php post_class('clearfix'); ?> role="article">
+				<?php if (have_posts()) : while (have_posts()) : the_post();
+					if ( has_post_thumbnail() ) {?>
+				
+				<article id="post-<?php the_ID(); ?>" <?php post_class('index post clearfix'); ?> role="article"> 
+						<figure class="left">
+							<a href="<?php the_permalink() ?>"><?php the_post_thumbnail( 'thumb-150' ); ?></a>
+						</figure>            
 						
-						<header>
-							
-							<h3 class="h2"><a href="<?php the_permalink() ?>" rel="bookmark" title="<?php the_title_attribute(); ?>"><?php the_title(); ?></a></h3>
-							
-							<p class="meta"><?php _e("Posted", "bonestheme"); ?> <time datetime="<?php echo the_time('Y-m-j'); ?>" pubdate><?php the_time('F jS, Y'); ?></time> <?php _e("by", "bonestheme"); ?> <?php the_author_posts_link(); ?> <span class="amp">&</span> <?php _e("filed under", "bonestheme"); ?> <?php the_category(', '); ?>.</p>
-						
-						</header> <!-- end article header -->
+						<section class="index post_content left">  
+							<h1 class="h2"><a href="<?php the_permalink() ?>" rel="bookmark" title="<?php the_title_attribute(); ?>"><?php the_title(); ?></a></h1><span class="post-category">i <?php the_category(', '); ?></span>
+							<?php the_excerpt(); ?><a class="read-more" href="<?php the_permalink() ?>">Läs mer &raquo;</a>
+						</section>											
+				</article> <!-- end article -->
+			
+			<?php } else { ?>
+				
+				<article id="post-<?php the_ID(); ?>" <?php post_class('index post clearfix'); ?> role="article"> 
+					<section class="index post_content full">  
+							<h1 class="h2"><a href="<?php the_permalink() ?>" rel="bookmark" title="<?php the_title_attribute(); ?>"><?php the_title(); ?></a></h1><span class="post-category">i <?php the_category(', '); ?></span>
+							<?php the_excerpt(); ?><a class="read-more" href="<?php the_permalink() ?>">Läs mer &raquo;</a>
+					</section>											
+				</article> <!-- end article -->
+				<?php } ?>				
 					
-						<section class="post_content">
-						
-							<?php the_post_thumbnail( 'bones-thumb-300' ); ?>
-						
-							<?php the_excerpt(); ?>
-					
-						</section> <!-- end article section -->
-						
-						<footer>
-							
-						</footer> <!-- end article footer -->
-					
-					</article> <!-- end article -->
-					
-					<?php endwhile; ?>	
+				<?php endwhile; ?>
 					
 					<?php if (function_exists('page_navi')) { // if expirimental feature is active ?>
 						

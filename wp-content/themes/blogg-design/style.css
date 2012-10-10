@@ -32,8 +32,8 @@ html {
 	-moz-background-size: cover;
 	-o-background-size: cover;
 	background-size: cover;
-	filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='http://i.imgur.com/96KDU.jpg', sizingMethod='scale');
-	-ms-filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='http://i.imgur.com/96KDU.jpg', sizingMethod='scale');
+	filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='library/images/background.jpg', sizingMethod='scale');
+	-ms-filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='library/images/background.jpg', sizingMethod='scale');
 	width: 100%;
 }
 

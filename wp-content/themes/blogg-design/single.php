@@ -2,7 +2,7 @@
 			
 		<div id="content" class="clearfix">
 			
-			<div id="main" class="left clearfix" role="main">
+			<div id="main" class="left clearfix" role="main" itemscope itemtype="http://schema.org/BlogPosting">
 
 				<?php if (have_posts()) : while (have_posts()) : the_post(); ?>
 					
@@ -12,7 +12,7 @@
 							
 							<h1 class="single-title" itemprop="headline"><?php the_title(); ?></h1>
 							
-							<p class="meta"><span class="time"><time datetime="<?php echo the_time('Y-m-j'); ?>"><?php the_time('j F Y'); ?></time></span><span class="category"><?php the_category(', '); ?></span>
+							<p class="meta"><span class="time"><time datetime="<?php echo the_time('Y-m-j'); ?>" itemprop="dateCreated" content="<?php echo the_time('Y-m-d'); ?>"><?php the_time('j F Y'); ?></time></span><span class="category"><?php the_category(', '); ?></span>
 						
 						</header> <!-- end article header -->
 					
@@ -31,7 +31,7 @@
 					</article> <!-- end article -->
 
 					<!-- Author info-->
-					<aside class="author_info">
+					<aside class="author_info" itemscope itemtype="http://schema.org/Person" itemprop="author">
 						<figure>
 							<?php echo get_avatar(get_the_author_meta('ID'), 150, 'Mystery Man', 'Avatar tillhörande '.get_the_author_meta('display_name')); ?>
 							<?php
@@ -62,7 +62,7 @@
 							?>
 						</figure>
 						<div>
-							<h2>Skrivet av <?php the_author_posts_link(); ?></a></h2>
+							<h2>Skrivet av <span itemprop="name"><?php the_author_posts_link(); ?></span></a></h2>
 							<p><?php the_author_meta('description'); ?></p>
 						</div>
 					</aside> <!-- end author info -->

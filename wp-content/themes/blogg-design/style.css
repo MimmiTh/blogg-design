@@ -501,6 +501,7 @@ aside.author_info {
 	background: #fff;
 	height: 150px;
 	overflow: hidden;
+	margin-bottom: 20px;
 }
 
 aside.author_info figure {

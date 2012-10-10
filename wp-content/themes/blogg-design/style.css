@@ -496,6 +496,7 @@ box-shadow:  0px 2px 10px 0px rgba(0, 0, 0, 0.3);
 /******************************************************************
 FÖRFATTARINFORMATIONSRUTA
 ******************************************************************/	
+
 aside.author_info {
 	background: #fff;
 	height: 150px;
@@ -524,24 +525,51 @@ aside.author_info p:last-child {
 	margin-bottom: 0;
 }
 
+aside.author_info .centeredlinks {
+	position: absolute;
+	bottom: 0;
+	width: 100%;
+	height: 38px;
+	display: table;
+	margin: 0 auto;
+}
+
 aside.author_info ul.author_links {
+	margin: 0;
 	width: 150px;
 	height: 18px;
 	padding: 10px 0;
 	background-color: rgba(22, 22, 22, 0.9);
-	text-align: center;
-	position: absolute;
-	margin: 0;
-	bottom: 0;
 }
 
 aside.author_info ul.author_links>li {
-	display: inline;
 	padding: 0 8px;
 	opacity: .8;
+	width: 18px;
+	height: 18px;
+	list-style: none;
+	display: inline;
 }
 aside.author_info ul.author_links>li:hover {
 	opacity: 1;
+}
+
+/* Googles "authorship" kräver att länktexten är "Google+", så 
+där kan vi inte bara använda en img-tagg. */
+aside.author_info ul.author_links>li.gplus {
+	width: 18px;
+	height: 18px;
+	display: inline-block;
+}
+ul.author_links .gplus>a {
+	border: 0;
+	display: inline-block;
+	text-shadow: none;
+	color: transparent;
+	width: 18px;
+	height: 18px;
+	background: url(library/images/gplus.png) no-repeat;
+	background-position: 1px -1px;
 }
 	
 /******************************************************************

@@ -41,21 +41,23 @@
 							$twitter = get_the_author_meta('user_tw');
 							
 							if ($user_url || $googleplus || $facebook || $twitter) {
-								echo '<ul class="author_links">';
-									if ($website) {
-										echo '<li><a href="'.$website.'"><img src="'.get_bloginfo('template_directory').'/library/images/home.png" width="18" height="18" alt="Hemsida"></a></li>';
-									}
-									if ($googleplus) {
-										echo '<li><a href="'.$googleplus.'"><img src="'.get_bloginfo('template_directory').'/library/images/gplus.png" width="18" height="18" alt="Google plus"></a></li>';
-									}
-									if ($twitter) {
-										echo '<li><a href="'.$twitter.'"><img src="'.get_bloginfo('template_directory').'/library/images/twitter.png" width="18" height="18" alt="Twitter"></a></li>';
-									}
-									if ($facebook) {
-										echo '<li><a href="'.$facebook.'"><img src="'.get_bloginfo('template_directory').'/library/images/fb.png" width="18" height="18" alt="Facebook"></a></li>';
-									}
-									
-								echo '</ul>';
+								echo '<div class="centeredlinks">';
+									echo '<ul class="author_links">';
+										if ($website) {
+											echo '<li><a href="'.$website.'"><img src="'.get_bloginfo('template_directory').'/library/images/home.png" width="18" height="18" alt="Hemsida"></a></li>';
+										}
+										if ($googleplus) {
+											echo '<li class="gplus"><a href="'.$googleplus.'?rel=author">Google+</a></li>';
+										}
+										if ($twitter) {
+											echo '<li><a href="'.$twitter.'"><img src="'.get_bloginfo('template_directory').'/library/images/twitter.png" width="18" height="18" alt="Twitter"></a></li>';
+										}
+										if ($facebook) {
+											echo '<li><a href="'.$facebook.'"><img src="'.get_bloginfo('template_directory').'/library/images/fb.png" width="18" height="18" alt="Facebook"></a></li>';
+										}
+										
+									echo '</ul>';
+								echo '</div>';
 							}
 							?>
 						</figure>

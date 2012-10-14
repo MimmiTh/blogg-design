@@ -452,6 +452,42 @@ box-shadow:  0px 2px 10px 0px rgba(0, 0, 0, 0.3);
 		color: #999;
 		font-style: italic;
 	}
+
+	p.notice, p.warning {
+		padding: 15px 25px 15px 60px;
+		border-radius: 3px;
+		position: relative;
+		overflow: hidden;
+	}
+
+	p.notice:before, p.warning:before {
+		font-family: "FontAwesome";
+		font-size: 70px;
+		color: #fff;
+		position: absolute;
+		left: -10px;
+		top: .5em;
+	}
+
+	p.notice {
+		border: 1px solid #00529B;
+		background-color: #BDE5F8;
+		color: #00529B;
+	}
+
+	p.notice:before {
+		content: '\f05a';
+	}
+
+	p.warning {
+		border: 1px solid #D8000C;
+		color: #D8000C;
+		background: #FFBABA;
+	}
+
+	p.warning:before {
+		content: '\f071';
+	}
     
 	.post a.button {
 		color: #FFF;

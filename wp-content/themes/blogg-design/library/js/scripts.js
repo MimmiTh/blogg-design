@@ -32,6 +32,13 @@ $(document).ready(function() {
 	
 	
 	// add all your scripts here
+    $('.featured').flexslider();
+
+    $(document).ready(function() {
+        $("section.index.post_content").dotdotdot({
+            after: "a.read_more"
+        });
+    });
 
  
 }); /* end of as page load scripts */

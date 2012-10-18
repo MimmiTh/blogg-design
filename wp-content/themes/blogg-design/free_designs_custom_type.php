@@ -9,12 +9,16 @@ Template Name: Free Designs
 		<div class="page_content clearfix">			
 			<h1 class="archive_title h2">Gratis bloggdesigner till blogg.se</h1>
 			
-			<?php if(have_posts()) : while (have_posts()) : the_post(); ?>
-			<div class="free-designs-description">
-				<?php the_content();?>
-			</div>
-		<?php endwhile; endif; ?>
+			<?php if(have_posts()) : while (have_posts()) : the_post();
+				$content = get_the_content();
+				if (!empty($content)) {
+					print '<div class="free-designs-description">';
+					print $content;
+					print '</div>';
+				}
+			endwhile; endif; ?>
 
+			<div class="designs">
 			<?php $args = array( 'post_type' => 'custom_type', 'posts_per_page' => 10 );
 			$loop = new WP_Query( $args );
 			while ( $loop->have_posts() ) : $loop->the_post(); ?>
@@ -29,8 +33,10 @@ Template Name: Free Designs
 				</article>
 	
 			<?php endwhile; ?>
-			
+
 			</div>
+			
+		</div>
 
 		</div> <!-- end #main -->
     

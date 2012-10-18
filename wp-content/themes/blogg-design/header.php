@@ -23,9 +23,6 @@
 			echo ' - ' . sprintf( __( 'Sida %s', 'twentyeleven' ), max( $paged, $page ) );
 		?></title>
 		
-		<meta name="description" content="">
-		<meta name="author" content="">
-		
 		<!-- icons & favicons (for more: http://themble.com/support/adding-icons-favicons/) -->
 		<link rel="shortcut icon" href="<?php echo get_template_directory_uri(); ?>/favicon.ico">
 

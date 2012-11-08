@@ -1,4 +1,4 @@
-(function ($) {
+(function($) {
 
     // this is a binary search that operates via a function
     // func should return < 0 if it should search smaller values
@@ -29,22 +29,22 @@
     }
 
     // setup handlers for events for show/hide
-    $.each(["show", "toggleClass", "addClass", "removeClass"], function () {
+    $.each(['show', 'toggleClass', 'addClass', 'removeClass'], function() {
 
         //get the old function, e.g. $.fn.show   or $.fn.hide
         var oldFn = $.fn[this];
-        $.fn[this] = function () {
+        $.fn[this] = function() {
 
             // get the items that are currently hidden
-            var hidden = this.find(":hidden").add(this.filter(":hidden"));
+            var hidden = this.find(':hidden').add(this.filter(':hidden'));
 
             // run the original function
             var result = oldFn.apply(this, arguments);
 
             // for all of the hidden elements that are now visible
-            hidden.filter(":visible").each(function () {
+            hidden.filter(':visible').each(function() {
                 // trigger the show msg
-                $(this).triggerHandler("show");
+                $(this).triggerHandler('show');
             });
 
             return result;
@@ -53,14 +53,14 @@
 
     // create the ellipsis function
     // when addTooltip = true, add a title attribute with the original text
-    $.fn.ellipsis = function (addTooltip) {
+    $.fn.ellipsis = function(addTooltip) {
 
-        return this.each(function () {
+        return this.each(function() {
             var el = $(this);
 
-            if (el.is(":visible")) {
+            if (el.is(':visible')) {
 
-                if (el.css("overflow") === "hidden") {
+                if (el.css('overflow') === 'hidden') {
                     var content = el.html();
                     var multiline = el.hasClass('multiline');
                     var tempElement = $(this.cloneNode(true))
@@ -68,16 +68,16 @@
                         .css('position', 'absolute')
                         .css('overflow', 'visible')
                         .width(multiline ? el.width() : 'auto')
-                        .height(multiline ? 'auto' : el.height())
-                    ;
+                        .height(multiline ? 'auto' : el.height());
+
 
                     el.after(tempElement);
 
-                    var tooTallFunc = function () {
+                    var tooTallFunc = function() {
                         return tempElement.height() > el.height();
                     };
 
-                    var tooWideFunc = function () {
+                    var tooWideFunc = function() {
                         return tempElement.width() > el.width();
                     };
 
@@ -96,12 +96,12 @@
 
                         var originalContent = content;
 
-                        var createContentFunc = function (i) {
+                        var createContentFunc = function(i) {
                             content = originalContent.substr(0, i);
-                            tempElement.html(content + "…");
+                            tempElement.html(content + '…');
                         };
 
-                        var searchFunc = function (i) {
+                        var searchFunc = function(i) {
                             createContentFunc(i);
                             if (tooLongFunc()) {
                                 return -1;
@@ -126,10 +126,16 @@
             }
             else {
                 // if this isn't visible, then hook up the show event
-                el.one('show', function () {
+                el.one('show', function() {
                     $(this).ellipsis(addTooltip);
                 });
             }
         });
     };
-} (jQuery));​
+
+    // ellipsification for items with an ellipsis
+    $(document).ready(function() {
+        $('.ellipsis').ellipsis(true);
+    });
+
+} (jQuery));

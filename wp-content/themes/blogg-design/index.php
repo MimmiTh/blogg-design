@@ -48,7 +48,7 @@
 						
 						<section class="index post_content left">  
 							<h1 class="h2"><a href="<?php the_permalink() ?>" rel="bookmark" title="<?php the_title_attribute(); ?>"><?php the_title(); ?></a></h1><span class="post-category">i <?php the_category(', '); ?></span>
-							<div class="excerpt"><?php the_excerpt(); ?></div><a class="read_more" href="<?php the_permalink() ?>">Läs mer &raquo;</a>
+							<div class="excerpt ellipsis multiline"><?php the_excerpt(); ?></div><a class="read_more" href="<?php the_permalink() ?>">Läs mer &raquo;</a>
 						</section>											
 				</article> <!-- end article -->
 			

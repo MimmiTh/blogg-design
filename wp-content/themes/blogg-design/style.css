@@ -88,13 +88,12 @@ mark, .search-term { background: #EBE16F; }
 .ellipsis {
         white-space: nowrap;
         overflow: hidden;
-        display: block;
+	display: block;
 }
 
 .ellipsis.multiline {
         white-space: normal;
-}​
-
+}
 /******************************************************************
 FONTS
 ******************************************************************/

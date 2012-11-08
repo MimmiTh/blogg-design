@@ -157,7 +157,7 @@ function add_theme_scripts() {
     wp_enqueue_script('modernizr', get_template_directory_uri() . '/library/js/modernizr.full.min.js', false, false, true);
 
     //Dotdotdot
-    wp_enqueue_script('dotdotdot', get_template_directory_uri() . '/library/js/jquery.dotdotdot-1.5.1.js', false, false, true);
+    wp_enqueue_script('ellipsis', get_template_directory_uri() . '/library/js/jquery.ellipsis.js', false, false, true);
 
     //Flexslider
     wp_enqueue_script('flexslider', get_template_directory_uri() . '/library/js/flexslider/jquery.flexslider-min.js', false, false, true);

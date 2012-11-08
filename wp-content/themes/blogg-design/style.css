@@ -83,7 +83,17 @@ mark, .search-term { background: #EBE16F; }
 .help { border-color: #E0C618; background: #EBE16F; }
 .info { border-color: #92cae4; background: #d5edf8; }
 .error { border-color: #fbc2c4; background: #fbe3e4; }
-.success { border-color: #c6d880; background: #e6efc2; } 
+.success { border-color: #c6d880; background: #e6efc2; }
+
+.ellipsis {
+        white-space: nowrap;
+        overflow: hidden;
+        display: block;
+}
+
+.ellipsis.multiline {
+        white-space: normal;
+}​
 
 /******************************************************************
 FONTS
@@ -357,6 +367,9 @@ FIRST PAGE POSTS
 .index.post_content h1 { margin: 0 5px 10px 0; display: inline;}
 .index.post_content p { margin: 0; line-height: 1.3em; }
 .index figure { width: 150px;}
+.index .excerpt {
+	height: 40px;
+}
 
 /******************************************************************
 POSTS & CONTENT STYLES

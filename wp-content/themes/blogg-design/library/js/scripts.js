@@ -35,9 +35,7 @@ $(document).ready(function() {
     $('.featured').flexslider();
 
     $(document).ready(function() {
-        $("section.index.post_content").dotdotdot({
-            after: "a.read_more"
-        });
+        $(".index .excerpt").ellipsis(false);
     });
 
  

@@ -507,13 +507,13 @@ box-shadow:  0px 2px 10px 0px rgba(0, 0, 0, 0.3);
 		text-shadow: none;
 		border-radius: 5px;
 		text-align: center;
-		background: #ce4642; /* Old browsers */
-		background: -moz-linear-gradient(top, #ce4642 0%, #b53e39 100%); /* FF3.6+ */
-		background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#ce4642), color-stop(100%,#b53e39)); /* Chrome,Safari4+ */
-		background: -webkit-linear-gradient(top, #ce4642 0%,#b53e39 100%); /* Chrome10+,Safari5.1+ */
-		background: -o-linear-gradient(top, #ce4642 0%,#b53e39 100%); /* Opera 11.10+ */
-		background: -ms-linear-gradient(top, #ce4642 0%,#b53e39 100%); /* IE10+ */
-		background: linear-gradient(to bottom, #ce4642 0%,#b53e39 100%); /* W3C */
+		background: #bc403e; /* Old browsers */
+		background: -moz-linear-gradient(top, #bc403e 0%, #a83935 100%); /* FF3.6+ */
+		background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#bc403e), color-stop(100%,#a83935)); /* Chrome,Safari4+ */
+		background: -webkit-linear-gradient(top, #bc403e 0%,#a83935 100%); /* Chrome10+,Safari5.1+ */
+		background: -o-linear-gradient(top, #bc403e 0%,#a83935 100%); /* Opera 11.10+ */
+		background: -ms-linear-gradient(top, #bc403e 0%,#a83935 100%); /* IE10+ */
+		background: linear-gradient(to bottom, #bc403e 0%,#a83935 100%); /* W3C */
 		-webkit-box-shadow: 0px 1px 3px 0px rgba(0, 0, 0, 0.1);
 		box-shadow: 0px 1px 3px 0px rgba(0, 0, 0, 0.1);	
 		cursor: pointer;
@@ -522,13 +522,13 @@ box-shadow:  0px 2px 10px 0px rgba(0, 0, 0, 0.3);
 
 	.button:hover, a.button, .wpcf7-submit:hover {
 		color: #fff;
-		background: #bc403e; /* Old browsers */
-		background: -moz-linear-gradient(top, #bc403e 0%, #a83935 100%); /* FF3.6+ */
-		background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#bc403e), color-stop(100%,#a83935)); /* Chrome,Safari4+ */
-		background: -webkit-linear-gradient(top, #bc403e 0%,#a83935 100%); /* Chrome10+,Safari5.1+ */
-		background: -o-linear-gradient(top, #bc403e 0%,#a83935 100%); /* Opera 11.10+ */
-		background: -ms-linear-gradient(top, #bc403e 0%,#a83935 100%); /* IE10+ */
-		background: linear-gradient(to bottom, #bc403e 0%,#a83935 100%); /* W3C */
+		background: #ce4642; /* Old browsers */
+		background: -moz-linear-gradient(top, #ce4642 0%, #b53e39 100%); /* FF3.6+ */
+		background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#ce4642), color-stop(100%,#b53e39)); /* Chrome,Safari4+ */
+		background: -webkit-linear-gradient(top, #ce4642 0%,#b53e39 100%); /* Chrome10+,Safari5.1+ */
+		background: -o-linear-gradient(top, #ce4642 0%,#b53e39 100%); /* Opera 11.10+ */
+		background: -ms-linear-gradient(top, #ce4642 0%,#b53e39 100%); /* IE10+ */
+		background: linear-gradient(to bottom, #ce4642 0%,#b53e39 100%); /* W3C */
 }
 
 	.button:active, a.button, .wpcf7-submit:active {

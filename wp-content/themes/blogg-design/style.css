@@ -501,7 +501,7 @@ box-shadow:  0px 2px 10px 0px rgba(0, 0, 0, 0.3);
 		content: '\f071';
 	}
     
-	.button, .wpcf7-submit {
+	.button, a.button, .wpcf7-submit {
 		color: #FFF;
 		padding: 13px 25px;
 		text-shadow: none;
@@ -520,7 +520,7 @@ box-shadow:  0px 2px 10px 0px rgba(0, 0, 0, 0.3);
 		line-height: 2.5em;
 }
 
-	.button:hover, .wpcf7-submit:hover {
+	.button:hover, a.button, .wpcf7-submit:hover {
 		background: #bc403e; /* Old browsers */
 		background: -moz-linear-gradient(top, #bc403e 0%, #a83935 100%); /* FF3.6+ */
 		background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#bc403e), color-stop(100%,#a83935)); /* Chrome,Safari4+ */
@@ -530,7 +530,7 @@ box-shadow:  0px 2px 10px 0px rgba(0, 0, 0, 0.3);
 		background: linear-gradient(to bottom, #bc403e 0%,#a83935 100%); /* W3C */
 }
 
-	.button:active, .wpcf7-submit:active {
+	.button:active, a.button, .wpcf7-submit:active {
 		background: #a83935; /* Old browsers */
 		background: -moz-linear-gradient(top, #a83935 0%, #bc403e 100%); /* FF3.6+ */
 		background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#a83935), color-stop(100%,#bc403e)); /* Chrome,Safari4+ */

@@ -472,7 +472,7 @@ box-shadow:  0px 2px 10px 0px rgba(0, 0, 0, 0.3);
 		overflow: hidden;
 	}
 
-	.notice:before, .warning:before, div.wpcf7-response-output:before {
+	.notice:before, .warning:before {
 		font-family: "FontAwesome";
 		font-size: 70px;
 		color: #fff;
@@ -497,7 +497,7 @@ box-shadow:  0px 2px 10px 0px rgba(0, 0, 0, 0.3);
 		background: #FFBABA;
 	}
 
-	.warning:before, div.wpcf7-validation-errors:before {
+	.warning:before {
 		content: '\f071';
 	}
     

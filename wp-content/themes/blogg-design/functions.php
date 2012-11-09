@@ -132,16 +132,16 @@ function bones_wpsearch($form) {
 //Add CSS files
 function add_theme_styles() {
     //normalization
-    wp_enqueue_style('normalize', get_template_directory_uri() . '/library/css/normalize.css', false, false, 'all');
+    wp_enqueue_style('normalize', get_template_directory_uri() . '/library/css/normalize.css', false, null, 'all');
 
     //Font awesome webfont
-    wp_enqueue_style('font-awesome', get_template_directory_uri() . '/library/css/font-awesome.css', false, false, 'all');
+    wp_enqueue_style('font-awesome', get_template_directory_uri() . '/library/css/font-awesome.css', false, null, 'all');
 
     //Base theme style
-    wp_enqueue_style('style', get_template_directory_uri() . '/style.css', false, false, 'all');
+    wp_enqueue_style('style', get_template_directory_uri() . '/style.css', false, null, 'all');
 
     //Flexslider
-    wp_enqueue_style('flexslider', get_template_directory_uri() . '/library/js/flexslider/flexslider.css', false, false, 'all');    
+    wp_enqueue_style('flexslider', get_template_directory_uri() . '/library/js/flexslider/flexslider.css', false, null, 'all');    
 
     //IE-only stylesheets
     global $is_IE;
@@ -154,16 +154,16 @@ add_action('wp_enqueue_scripts', 'add_theme_styles');
 //Add JS files
 function add_theme_scripts() {
     //Modernizr
-    wp_enqueue_script('modernizr', get_template_directory_uri() . '/library/js/modernizr.full.min.js', false, false, true);
+    wp_enqueue_script('modernizr', get_template_directory_uri() . '/library/js/modernizr.full.min.js', false, null, true);
 
     //Dotdotdot
-    wp_enqueue_script('ellipsis', get_template_directory_uri() . '/library/js/jquery.ellipsis.js', false, false, true);
+    wp_enqueue_script('ellipsis', get_template_directory_uri() . '/library/js/jquery.ellipsis.js', false, null, true);
 
     //Flexslider
-    wp_enqueue_script('flexslider', get_template_directory_uri() . '/library/js/flexslider/jquery.flexslider-min.js', false, false, true);
+    wp_enqueue_script('flexslider', get_template_directory_uri() . '/library/js/flexslider/jquery.flexslider-min.js', false, null, true);
 
     //Custom scripts
-    wp_enqueue_script('custom-scripts', get_template_directory_uri() . '/library/js/scripts.js', false, false, true);
+    wp_enqueue_script('custom-scripts', get_template_directory_uri() . '/library/js/scripts.js', false, null, true);
 }
 add_action('wp_enqueue_scripts', 'add_theme_scripts');
 

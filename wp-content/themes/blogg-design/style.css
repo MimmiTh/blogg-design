@@ -431,7 +431,7 @@ box-shadow:  0px 2px 10px 0px rgba(0, 0, 0, 0.3);
 			
 			.post_content video { margin: 1.5em 0; max-width: 100%; display: block; }
 			.post_content object { display: block; margin: 1.5em 0; max-width: 100%; }
-			.post_content pre, .post_content code { font-size: 0.9em; line-height: 1.7em; padding: 1em; background: #eee; border: 2px solid #cecece; }
+			.post_content pre, .post_content code { font-size: 0.9em; line-height: 1.7em; padding: 3px 5px; background: #eee; border: 1px solid #cecece; margin: 0 3px;}
 			
 			.wp-caption { margin-bottom: 1.5em; text-align: center; padding-top: 5px; }
 			.wp-caption img { border: 0 none; padding: 0; margin: 0; }

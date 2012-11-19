@@ -27,7 +27,7 @@
 							<a href="<?php echo $url; ?>"><?php the_post_thumbnail( 'slider' ); ?></a>
 							<section class="clearfix">
 								<h1>Utvald: <a href="<?php echo $url; ?>" rel="bookmark" title="<?php the_title_attribute(); ?>"><?php the_title(); ?></a></h1>
-								<?php echo get_the_content(); ?>
+								<?php the_content(); ?>
 								<a class="read-more" href="<?php echo $url; ?>">Läs mer &raquo;</a>
 							</section>			
 						</li>

@@ -11,7 +11,8 @@ sidebars, comments, ect.
 // Get Bones Core Up & Running!
 require_once('library/bones.php');            // core functions (don't remove)
 require_once('library/plugins.php');          // plugins & extra functions (optional)
-require_once('library/custom-post-type.php'); // custom post type example
+require_once('library/bloggdesign-custom-post-type.php'); // custom post type example
+require_once('library/slideshow-custom-post-type.php'); // custom post type example
 
 // Admin Functions (commented out by default)
 // require_once('library/admin.php');         // custom admin functions

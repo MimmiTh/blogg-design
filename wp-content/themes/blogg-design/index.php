@@ -11,9 +11,6 @@
 					$post_per_page = 5;
 					$args = array(
 						'post_type' => 'bd_slideshow',
-						'orderby' => 'date',
-						'order' => 'ASC',
-						'paged' => $paged,
 						'posts_per_page' => $posts_per_page
 					);
 					$featuredquery = new WP_Query($args);

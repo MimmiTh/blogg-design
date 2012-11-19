@@ -6,27 +6,29 @@
 			<article class="featured flexslider">
 				<ul class="slides">			
 					<?php 
-						$args = array(
-							'meta_query' => array(
-								array(
-									'key' => 'featured',
-									'value' => '1',
-									'compare' => 'LIKE'
-								)
-							)
-						);
-						
+					
+					$paged = (get_query_var('paged')) ? get_query_var('paged') : 1;
+					$post_per_page = 5;
+					$args = array(
+						'post_type' => 'bd_slideshow',
+						'orderby' => 'date',
+						'order' => 'ASC',
+						'paged' => $paged,
+						'posts_per_page' => $posts_per_page
+					);
 					$featuredquery = new WP_Query($args);
 					
-					while ($featuredquery->have_posts()) : $featuredquery->the_post(); ?>
+					while ($featuredquery->have_posts()) : $featuredquery->the_post();
+					$custom = get_post_custom($post->ID);
+					$url = $custom['url'][0];
+					$custom_title = '#'.$post->ID; ?>
 
 						<li>
-							<a href="<?php the_permalink() ?>"><?php the_post_thumbnail( 'thumb-700' ); ?></a>
+							<a href="<?php echo $url; ?>"><?php the_post_thumbnail( 'slider' ); ?></a>
 							<section class="clearfix">
-								<h1>Utvald: <a href="<?php the_permalink() ?>" rel="bookmark" title="<?php the_title_attribute(); ?>"><?php the_title(); ?></a></h1>
-								<span class="post-category"><?php the_category(', '); ?></span><br>
-								<?php the_excerpt(); ?>
-								<a class="read-more" href="<?php the_permalink() ?>">Läs mer &raquo;</a>
+								<h1>Utvald: <a href="<?php echo $url; ?>" rel="bookmark" title="<?php the_title_attribute(); ?>"><?php the_title(); ?></a></h1>
+								<?php echo get_the_content(); ?>
+								<a class="read-more" href="<?php echo $url; ?>">Läs mer &raquo;</a>
 							</section>			
 						</li>
 

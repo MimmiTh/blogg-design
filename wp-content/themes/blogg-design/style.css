@@ -621,6 +621,44 @@ ul.author_links .gplus>a {
 	background: url(library/images/gplus.png) no-repeat;
 	background-position: 1px -1px;
 }
+
+/* Relaterade poster */
+.single div.related_posts {
+	background: #fff;
+	margin-bottom: 20px;
+	padding: 20px;
+	-webkit-box-shadow: 0px 2px 10px 0px rgba(0, 0, 0, 0.3);
+	box-shadow: 0px 2px 10px 0px rgba(0, 0, 0, 0.3)
+}
+
+.single ol.related_posts_bottom {
+	margin: 0;
+	list-style: none;
+}
+
+.single ol.related_posts_bottom>li {
+	border-top: 1px solid #e4e4e4;
+	border-top: 1px solid rgba(0, 49, 79, 0.08);
+}
+
+.single ol.related_posts_bottom li:first-child {
+	border: 0;
+}
+
+.single ol.related_posts_bottom a {
+	height: 30px;
+	padding: 5px 0;
+	position: relative;
+	width: 660px;
+	display: block;
+}
+
+.single ol.related_posts_bottom>li .title {
+	position: absolute;
+	top: 9px;
+	left: 45px;
+}
+
 	
 /******************************************************************
 GRATIS BLOGGDESIGNER
@@ -747,7 +785,7 @@ PAGE NAVI STYLES
 /******************************************************************
 COMMENT STYLES
 ******************************************************************/
-#disqus_thread { background: #FFF; padding: 20px; }
+#disqus_thread { background: #FFF; padding: 20px; -webkit-box-shadow: 0px 2px 10px 0px rgba(0, 0, 0, 0.3); box-shadow: 0px 2px 10px 0px rgba(0, 0, 0, 0.3); }
 #main #disqus_thread { margin-bottom: 20px; }
 #comments { margin: 0 20px 0.75em; }/* h3 comment title */
 	#comments span { font-weight: 700; color: #1a90db; } /* number of comments span */

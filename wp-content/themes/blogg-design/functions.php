@@ -51,17 +51,25 @@ you like. Enjoy!
 // Sidebars & Widgetizes Areas
 function bones_register_sidebars() {
   
-        register_sidebar(array(
+    register_sidebar(array(
     	'id' => 'sidebar',
     	'name' => 'Sidebar',
-    	'description' => 'The sidebar.',
+    	'description' => 'Sidebaren. Visas på alla sidor.',
     	'before_widget' => '<div id="%1$s" class="widget %2$s">',
     	'after_widget' => '</div>',
     	'before_title' => '<h2 class="widgettitle h3">',
     	'after_title' => '</h2>',
     ));
     
-  
+    register_sidebar(array(
+        'id' => 'post-bottom',
+        'name' => 'Post, bottom',
+        'description' => 'Yta under poster, efter författarrutan.',
+        'before_widget' => '<div id="%1$s" class="widget post-bottom %2$s">',
+        'after_widget' => '</div>',
+        'before_title' => '<h2 class="widgettitle h3">',
+        'after_title' => '</h2>',
+    ));
 
     
     /* 

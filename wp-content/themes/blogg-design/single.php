@@ -66,7 +66,23 @@
 							<p><?php the_author_meta('description'); ?></p>
 						</div>
 					</aside> <!-- end author info -->
+
+					<!-- Related posts -->
+					<?php if (function_exists('related_posts')) {
+						echo '<div class="related_posts">';
+						echo '<h2 class="widgettitle h3">Relaterade artiklar</h2>';
+						related_posts();
+						echo '</div>';
+					} ?>
+
+					<!-- Post bottom, widgetized area -->
+					<?php 
+					if (is_active_sidebar('post-bottom')) {
+						dynamic_sidebar('post-bottom');
+					}
+					?>
 					
+					<!-- Comments -->
 					<?php comments_template(); ?>
 					
 					<?php endwhile; ?>			

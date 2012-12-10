@@ -26,6 +26,7 @@ add_image_size( 'bones-thumb-560', 560, 200, true );
 add_image_size( 'thumb-150', 150, 150, true );
 add_image_size( 'thumb-700', 700, 150, true );
 add_image_size( 'thumb-220', 220, 200, true );
+add_image_size( 'post-large-thumbnail', 660, 9999);
 /* 
 to add more sizes, simply copy a line from above 
 and change the dimensions & name. As long as you
@@ -45,6 +46,13 @@ for the 600 x 100 image:
 You can change the names and dimensions to whatever
 you like. Enjoy!
 */
+
+function bd_show_image_sizes($sizes) {
+    $sizes['post-large-thumbnail'] = 'Post, large thumb';
+
+    return $sizes;
+}
+add_filter('image_size_names_choose', 'bd_show_image_sizes');
 
 /************* ACTIVE SIDEBARS ********************/
 

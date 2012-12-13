@@ -12,7 +12,7 @@
 						if ( $google_profile ) {
 							echo '<a href="' . esc_url( $google_profile ) . '" rel="me">' . $curauth->display_name . '</a>'; ?></a>
 						<?php } else { ?>
-						<?php echo get_author_name(get_query_var('author')); ?>
+						<?php echo get_the_author_meta('display_name', get_query_var('author')); ?>
 						<?php } ?>
 					</h1>
 					
@@ -26,7 +26,7 @@
 						
 						<section class="index post_content left">  
 							<h1 class="h2"><a href="<?php the_permalink() ?>" rel="bookmark" title="<?php the_title_attribute(); ?>"><?php the_title(); ?></a></h1><span class="post-category">i <?php the_category(', '); ?></span>
-							<?php the_excerpt(); ?><a class="read-more" href="<?php the_permalink() ?>">Läs mer &raquo;</a>
+							<div class="excerpt ellipsis multiline"><?php the_excerpt(); ?></div>
 						</section>											
 				</article> <!-- end article -->
 			
@@ -35,7 +35,7 @@
 				<article id="post-<?php the_ID(); ?>" <?php post_class('index post clearfix'); ?> role="article"> 
 					<section class="index post_content full">  
 							<h1 class="h2"><a href="<?php the_permalink() ?>" rel="bookmark" title="<?php the_title_attribute(); ?>"><?php the_title(); ?></a></h1><span class="post-category">i <?php the_category(', '); ?></span>
-							<?php the_excerpt(); ?><a class="read-more" href="<?php the_permalink() ?>">Läs mer &raquo;</a>
+							<div class="excerpt ellipsis multiline"><?php the_excerpt(); ?></div>
 					</section>											
 				</article> <!-- end article -->
 				<?php } ?>				

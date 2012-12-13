@@ -40,8 +40,17 @@
 						</figure>            
 						
 						<section class="index post_content left">  
-							<h1 class="h2"><a href="<?php the_permalink() ?>" rel="bookmark" title="<?php the_title_attribute(); ?>"><?php the_title(); ?></a></h1><span class="post-category">i <?php the_category(', '); ?></span>
-							<?php the_excerpt(); ?><a class="read-more" href="<?php the_permalink() ?>">Läs mer &raquo;</a>
+							<h1 class="h2">
+								<a href="<?php the_permalink() ?>" rel="bookmark" title="<?php the_title_attribute(); ?>">
+									<?php the_title(); ?>
+								</a>
+							</h1>
+							<span class="post-category">
+								i <?php the_category(', '); ?>
+							</span>
+							<div class="excerpt ellipsis multiline">
+								<?php the_excerpt(); ?>
+							</div>
 						</section>											
 				</article> <!-- end article -->
 			
@@ -50,7 +59,7 @@
 				<article id="post-<?php the_ID(); ?>" <?php post_class('index post clearfix'); ?> role="article"> 
 					<section class="index post_content full">  
 							<h1 class="h2"><a href="<?php the_permalink() ?>" rel="bookmark" title="<?php the_title_attribute(); ?>"><?php the_title(); ?></a></h1><span class="post-category">i <?php the_category(', '); ?></span>
-							<?php the_excerpt(); ?><a class="read-more" href="<?php the_permalink() ?>">Läs mer &raquo;</a>
+							<div class="excerpt ellipsis multiline"><?php the_excerpt(); ?></div>
 					</section>											
 				</article> <!-- end article -->
 				<?php } ?>				

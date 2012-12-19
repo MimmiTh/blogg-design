@@ -9,7 +9,7 @@
 	<head>
 		<meta charset="utf-8">
 		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 		<title><?php
 		/*
 		 * Print the <title> tag based on what is being viewed.
@@ -25,6 +25,9 @@
 		
 		<!-- icons & favicons (for more: http://themble.com/support/adding-icons-favicons/) -->
 		<link rel="shortcut icon" href="<?php echo get_template_directory_uri(); ?>/favicon.ico">
+
+		<!-- StatusCake Javascript error logging -->
+		<script src="https://www.statuscake.com/App/Workfloor/JSLog.php?TrackID=7026"></script>
 
 		<!-- Grab Google CDN's jQuery, with a protocol relative URL; fall back to local if necessary -->
 		<script src="//ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>

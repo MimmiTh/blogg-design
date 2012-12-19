@@ -35,7 +35,7 @@
 				<article id="post-<?php the_ID(); ?>" <?php post_class('index post clearfix'); ?> role="article"> 
 					<section class="index post_content full">  
 							<h1 class="h2"><a href="<?php the_permalink() ?>" rel="bookmark" title="<?php the_title_attribute(); ?>"><?php the_title(); ?></a></h1><span class="post-category">i <?php the_category(', '); ?></span>
-							<div class="excerpt ellipsis multiline"><?php the_excerpt(); ?></div>
+							<div class="excerpt ellipsis multiline"><p><?php the_excerpt(); ?></p></div>
 					</section>											
 				</article> <!-- end article -->
 				<?php } ?>				

@@ -26,8 +26,10 @@
 		<!-- icons & favicons (for more: http://themble.com/support/adding-icons-favicons/) -->
 		<link rel="shortcut icon" href="<?php echo get_template_directory_uri(); ?>/favicon.ico">
 
+		<?php if ($_SERVER['HTTP_HOST'] === "blogg-design.se") { ?>
 		<!-- StatusCake Javascript error logging -->
 		<script src="https://www.statuscake.com/App/Workfloor/JSLog.php?TrackID=7026"></script>
+		<?php } ?>
 
 		<!-- Grab Google CDN's jQuery, with a protocol relative URL; fall back to local if necessary -->
 		<script src="//ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>

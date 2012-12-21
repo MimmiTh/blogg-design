@@ -25,7 +25,7 @@ add_image_size( 'bones-thumb-300', 300, 100, true );
 add_image_size( 'bones-thumb-560', 560, 200, true );
 add_image_size( 'thumb-150', 150, 150, true );
 add_image_size( 'thumb-700', 700, 150, true );
-add_image_size( 'thumb-220', 220, 200, true );
+add_image_size( 'thumb-320', 320, 400, true );
 add_image_size( 'post-large-thumbnail', 660, 9999);
 /* 
 to add more sizes, simply copy a line from above 

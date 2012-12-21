@@ -709,6 +709,9 @@ GRATIS BLOGGDESIGNER
 
 .design figure img {
 	margin: 0;
+	-webkit-box-shadow:  0px 3px 8px 0px rgba(0, 0, 0, 0.2);        
+	box-shadow:  0px 3px 8px 0px rgba(0, 0, 0, 0.2);
+	border: 1px solid #FFF;
 }
 
 .design p {

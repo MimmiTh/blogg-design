@@ -670,10 +670,6 @@ ul.author_links .gplus>a {
 /******************************************************************
 GRATIS BLOGGDESIGNER
 ******************************************************************/	
-.page-template-free_designs_custom_type-php .design:nth-child(3n) {
-	margin-right: 0px;
-}
-
 .free-designs-description {
 	background: #fff;
 	padding: 20px;
@@ -721,6 +717,7 @@ GRATIS BLOGGDESIGNER
 
 .design figcaption {
 	text-align: center;
+	margin: 10px 0;
 }
 
 .design figcaption a {
@@ -729,6 +726,7 @@ GRATIS BLOGGDESIGNER
 
 .design h2.h4 {
 	margin: 0;
+	font-size: 1.7em;
 }
 
 /******************************************************************

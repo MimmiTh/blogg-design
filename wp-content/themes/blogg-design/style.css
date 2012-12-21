@@ -680,11 +680,16 @@ GRATIS BLOGGDESIGNER
 	margin-bottom: 20px;
 }
 
+.designs {
+	background: #FFF;
+	padding: 20px;
+	margin-top: 20px;
+}
+
 .design {
-	width: 220px;
+	width: 320px;
 	margin: 0 20px 20px 0;
 	float: left;
-	background: #FFF;
 }
 
 .design.last {
@@ -704,7 +709,7 @@ GRATIS BLOGGDESIGNER
 }
 
 .design figcaption {
-	padding: 10px 20px 20px 20px;
+	text-align: right;
 }
 
 .design figcaption a {

@@ -680,6 +680,17 @@ GRATIS BLOGGDESIGNER
 	margin-bottom: 20px;
 }
 
+.free-designs-description h1 {
+	color: #333;
+	text-shadow: none;
+	font-size: 50px;
+	margin: 0;
+}
+
+.free-designs-description p {
+	margin: 10px 0;
+}
+
 .designs {
 	background: #FFF;
 	padding: 20px;
@@ -692,7 +703,7 @@ GRATIS BLOGGDESIGNER
 	float: left;
 }
 
-.design.last {
+.design:nth-child(2n) {
 	margin-right: 0;
 }
 

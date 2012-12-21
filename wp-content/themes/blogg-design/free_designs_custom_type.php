@@ -18,7 +18,7 @@ Template Name: Free Designs
 				}
 			endwhile; endif; ?>
 
-			<div class="designs">
+			<div class="designs clearfix">
 			<?php $args = array( 'post_type' => 'custom_type', 'posts_per_page' => 10 );
 			$loop = new WP_Query( $args );
 			while ( $loop->have_posts() ) : $loop->the_post(); ?>

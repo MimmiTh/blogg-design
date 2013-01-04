@@ -14,6 +14,15 @@ $(document).ready(function() {
 
 	// add all your scripts here
     $('.featured').flexslider();
+
+    //Fancybox stuff
+    $(".post a[href$='.jpg'], .post a[href$='.jpeg'], .post a[href$='.png'], .post a[href$='.gif'], .post a[href$='.bmp']").fancybox({
+        padding: 0,
+        helpers: {
+            title: null,
+            overlay: null
+        }
+    });
  
 }); /* end of as page load scripts */
 

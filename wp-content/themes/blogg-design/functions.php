@@ -160,6 +160,10 @@ function add_theme_styles() {
     //Flexslider
     wp_enqueue_style('flexslider', get_template_directory_uri() . '/library/js/flexslider/flexslider.css', false, null, 'all');    
 
+    //Fancybox
+    wp_enqueue_style('fancybox', get_template_directory_uri() . '/library/js/fancybox/jquery.fancybox.css', false, null, 'all');    
+
+
     //IE-only stylesheets
     global $is_IE;
     if ($is_IE) {
@@ -182,6 +186,9 @@ function add_theme_scripts() {
 
     //Flexslider
     wp_enqueue_script('flexslider', get_template_directory_uri() . '/library/js/flexslider/jquery.flexslider-min.js', false, null, true);
+
+    //Fancybox
+    wp_enqueue_script('fancybox', get_template_directory_uri() . '/library/js/fancybox/jquery.fancybox-min.js', false, null, true);
 
     //Custom scripts
     wp_enqueue_script('custom-scripts', get_template_directory_uri() . '/library/js/scripts.js', false, null, true);

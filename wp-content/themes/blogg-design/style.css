@@ -498,6 +498,14 @@ box-shadow:  0px 2px 10px 0px rgba(0, 0, 0, 0.3);
 		content: '\f05a';
 	}
 
+	.notice a {
+		color: #029AF0;
+	}
+
+	.notice a:hover {
+		color: #444;
+	}
+
 	.warning, div.wpcf7-validation-errors {
 		border: 1px solid #D8000C;
 		color: #D8000C;

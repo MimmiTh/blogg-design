@@ -1025,6 +1025,19 @@ abbr[title] {border: none;}
 	.textwidget {}
 	.widget_text {}
 	.textwidget p {}
+
+/* Facebook like box wídget 
+	This is needed to get rid of the pesky border. */
+.fb-like-box {
+	width: 200px;
+	height: 325px;
+	overflow: hidden;
+}
+
+.fb-like-box>span {
+	margin-left: -1px;
+	margin-top: -1px;
+}
 	
 
 /******************************************************************

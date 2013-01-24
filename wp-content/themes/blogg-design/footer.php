@@ -8,6 +8,7 @@
 		<script>window.attachEvent('onload',function(){CFInstall.check({mode:'overlay'})})</script>
 	<![endif]-->
 	
+	<div id="fb-root"></div>
 	<?php wp_footer(); // js scripts are inserted using this function ?>
 
 </body>
